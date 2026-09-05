@@ -4,9 +4,9 @@ export default defineConfig({
   tanstackStart: {
     spa: {
       enabled: true,
-    },
-    server: {
-      entry: "server",
+      prerender: {
+        outputPath: "/index.html",
+      },
     },
   },
 
